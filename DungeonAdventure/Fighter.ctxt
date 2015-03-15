@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=name
+comment0.target=Fighter(java.lang.String)
+comment0.text=\ initializes\ stats\ and\ Equipment\n
+comment1.params=
+comment1.target=void\ lvlUp()
+comment2.params=
+comment2.target=void\ setStartingEquips()
+comment3.params=e
+comment3.target=void\ equip(Equipment)
+comment4.params=e
+comment4.target=boolean\ equipUsable(Equipment)
+comment5.params=defender
+comment5.target=void\ attack(Character)
+comment5.text=ATTACKS\:
+comment6.params=defender
+comment6.target=void\ powerAttack(Character)
+comment7.params=defender
+comment7.target=void\ aimedAttack(Character)
+comment8.params=
+comment8.target=java.lang.String\ getImage()
+comment9.params=
+comment9.target=java.lang.String\ getHeroType()
+numComments=10

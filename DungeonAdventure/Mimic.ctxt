@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mimic()
+comment1.params=defender
+comment1.target=void\ specAttack(Hero)
+comment2.params=
+comment2.target=java.lang.String\ getImage()
+comment3.params=
+comment3.target=java.lang.String\ getBattleImage()
+numComments=4

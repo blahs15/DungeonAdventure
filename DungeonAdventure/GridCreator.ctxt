@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String[][]\ getGrid()
+comment0.text=creates\ a\ grid\ with\ Strings\ representing\ the\ objects\ to\ later\ be\ created\n\ which\ layout\ is\ used\ is\ randomized\n\ h\ \=\ Hero,\ m\ \=\ Monster,\ w\ \=\ Wall,\ c\ \=\ Chest,\ g\ \=\ GoldChest,\ s\ \=\ Stairs\n\ @return\ 2D\ String\ array\ with\ layout\ of\ dungeon\ floor\n
+comment1.params=grid\ h
+comment1.target=Hero[][]\ createHeroGrid(java.lang.String[][],\ Hero)
+comment1.text=\ creates\ a\ grid\ with\ JUST\ the\ Hero\n\ @param\ the\ grid\ layout\n\ @param\ the\ Hero\n\ @return\ 2D\ Hero\ grid\ with\ hero\ in\ starting\ position\n
+comment2.params=heroGrid
+comment2.target=int\ getHeroRow(Hero[][])
+comment2.text=finds\ the\ location\ of\ the\ Hero\ in\ the\ HeroGrid\n\ @param\ heroGrid\ with\ Hero\ in\ it\n\ @return\ ROW\ of\ hero\ location\n
+comment3.params=heroGrid
+comment3.target=int\ getHeroCol(Hero[][])
+comment3.text=finds\ the\ location\ of\ the\ Hero\ in\ the\ HeroGrid\n\ @param\ heroGrid\ with\ Hero\ in\ it\n\ @return\ COLUMN\ of\ hero\ location\n
+comment4.params=grid\ floorLvl
+comment4.target=DungeonObject[][]\ createDungeon(java.lang.String[][],\ int)
+comment4.text=creates\ all\ the\ Objects\ in\ the\ dungeon\n\ @param\ the\ grid\ layout\n\ @param\ the\ current\ floorLevel\n\ @return\ 2D\ array\ with\ all\ the\ DungeonObjects\ initialized\n
+comment5.params=floorLvl
+comment5.target=Monster\ createMonster(int)
+comment5.text=\n\ creates\ a\ monster,\ randomized\ depending\ on\ what\ the\ current\ floor\ level\ is\n\ @param\ current\ floor\ level\n\ @return\ Monster\ created\n
+numComments=6

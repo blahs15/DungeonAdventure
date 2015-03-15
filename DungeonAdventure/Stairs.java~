@@ -1,0 +1,21 @@
+public class Stairs implements DungeonObject
+   {
+   public int goUpstairs( int floorLvl )
+      {
+      if( floorLvl >= 15 )
+         {
+         return 15;
+         } // end if
+      return floorLvl + 1;
+      } // end method goUpstairs
+   
+   public boolean getPathBlocked()
+      {
+      return false;
+      } // end method blockPath
+   
+   public String getImage()
+      {
+      return "Stairs.png";
+      } // end method getImage
+   } // end class Stairs

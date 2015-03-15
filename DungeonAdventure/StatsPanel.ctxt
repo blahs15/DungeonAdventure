@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=hero\ floorLvl
+comment0.target=StatsPanel(Hero,\ int)
+comment1.params=floorLvl
+comment1.target=void\ refreshStats(int)
+comment2.params=hero
+comment2.target=StatsPanel(Hero)
+comment3.params=
+comment3.target=void\ refreshStats()
+numComments=4

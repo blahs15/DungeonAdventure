@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=floorLvl
+comment0.target=int\ goUpstairs(int)
+comment0.text=\n\ increases\ the\ floor\ level\ by\ 1\n\ has\ a\ Maximum\ floor\ level\ of\ 15\n\ @param\ current\ floor\ level\n\ @return\ new\ floor\ level\n
+comment1.params=
+comment1.target=boolean\ getPathBlocked()
+comment2.params=
+comment2.target=java.lang.String\ getImage()
+numComments=3

@@ -1,0 +1,173 @@
+public abstract class Equipment implements Stats
+   {
+   private int att;
+   private int magicAtt;
+   private int def;
+   private int magicDef;
+   private int spd;
+   private int evasion;
+   private int accuracy;
+   private int maxHP;
+   private int maxSP;
+   
+   private String name;
+   private int floorLvl;
+   private int eSlotNum;
+   /**initializes the floor the Equipment was found on
+    * @param floor level found on
+    */
+   public Equipment( int floorLvl )
+      {
+      this.floorLvl = floorLvl;
+      setStats();
+      setName();
+      } // end constructor Equipment
+   
+   /**sets the stats of the Equipment
+    */
+   public abstract void setStats();
+   
+   /**
+    * Sets the name of the Equipment based on its stats
+    * 
+    * NAMES:
+    * (names of weapons - randomized)
+    * sword -- sword - broadsword - katana - scimitar - rapier - cutlass - saber
+    * staff -- staff - wand - tome - sceptor
+    * dagger -- dagger - knife - stiletto - dirk - shank
+    * 
+    * (material of equips - based on stats (def usually) )
+    * WEAPONS -- wooden - copper - iron - bronze - steel - silver
+    * - gold - cobalt - mythril - adamantium
+    * ARMOR -- cloth - leather - rubber - copper - iron - bronze - steel - silver
+    * - gold - cobalt - mythril - adamantium
+    * -- (can sometimes be light/heavy)
+    * 
+    * RING/PENDANT --  cloth - leather - rubber - stone - copper
+    * - iron - bronze - steel - silver - gold - cobalt 
+    * - mythril - adamantium - rainbow
+    * RING
+    * -- (based on what stat: ) - frenzied - magical - strong - enchanted 
+    * - hasty - transparent - trueSeeing - healing - skillful
+    * -- (statBonus based name: negative/positive ) - corrupted - blessed
+    * 
+    * (names of armors - randomized)
+    * 
+    */
+   public abstract void setName();
+   
+   
+   /**Setters and Getters for the Equipment stats
+    */
+   public void setAtt( int att )
+      {
+      this.att = att;
+      } // end method
+   public void setMagicAtt( int magAtt )
+      {
+      this.magicAtt = magAtt;
+      } // end method
+   public void setDef( int def )
+      {
+      this.def = def;
+      } // end method
+   public void setMagicDef( int magDef )
+      {
+      this.magicDef = magDef;
+      } // end method
+   public void setSpd( int spd )
+      {
+      this.spd = spd;
+      } // end method
+   public void setEvasion( int evasion )
+      {
+      this.evasion = evasion;
+      } // end method
+   public void setAccuracy( int acc )
+      {
+      this.accuracy = acc;
+      } // end method
+   public void setMaxHP( int maxHP )
+      {
+      this.maxHP = maxHP;
+      } // end method
+   public void setMaxSP( int maxSP )
+      {
+      this.maxSP = maxSP;
+      } // end method
+   public void setName( String name )
+      {
+      this.name = name;
+      } // end method
+   public void setESlotNum( int slotNum )
+      {
+      eSlotNum = slotNum;
+      } // end method
+      
+      
+   public String getName()
+      {
+      return name;
+      } // end method
+   public int getAtt()
+      {
+      return att;
+      } // end method
+   public int getMagicAtt()
+      {
+      return magicAtt;
+      } // end method
+   public int getDef()
+      {
+      return def;
+      } // end method
+   public int getMagicDef()
+      {
+      return magicDef;
+      } // end method
+   public int getSpd()
+      {
+      return spd;
+      } // end method
+   public int getEvasion()
+      {
+      return evasion;
+      } // end method
+   public int getAccuracy()
+      {
+      return accuracy;
+      } // end method
+   public int getMaxHP()
+      {
+      return maxHP;
+      } // end method
+   public int getMaxSP()
+      {
+      return maxSP;
+      } // end method
+   public int getFloorLvl()
+      {
+      return floorLvl;
+      } // end method
+   public int getESlotNum()
+      {
+      return eSlotNum;
+      } // end method
+   
+      
+   public String toString()
+      {
+      return "Name:" + name + 
+             "\natt: " + att +
+             "\nmagAtt: " + magicAtt +
+             "\ndef: " + def +
+             "\nmagDef: " + magicDef +
+             "\nspd: " + spd +
+             "\neva: " + evasion +
+             "\nacc: " + accuracy +
+             "\nmaxHP: " + maxHP +
+             "\nmaxSP: " + maxSP;
+      } // end method toString
+      
+      
+   } // end class Equipment

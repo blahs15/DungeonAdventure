@@ -1,0 +1,5 @@
+public interface DungeonObject
+   {
+   public abstract boolean getPathBlocked();
+   public abstract String getImage();
+   } // end interface DungeonObject

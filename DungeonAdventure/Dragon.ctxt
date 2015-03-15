@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dragon()
+comment1.params=defender
+comment1.target=void\ attack(Character)
+comment2.params=defender
+comment2.target=void\ specAttack(Hero)
+comment3.params=defender
+comment3.target=void\ effect(Character)
+comment4.params=
+comment4.target=int\ getEvasion()
+comment5.params=
+comment5.target=java.lang.String\ getImage()
+comment6.params=
+comment6.target=java.lang.String\ getBattleImage()
+numComments=7

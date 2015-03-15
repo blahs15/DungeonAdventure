@@ -1,0 +1,73 @@
+public abstract class BattleStatic
+   {
+   
+   
+   public static void attack( int att, Character defender )
+      {
+      int dmg = att - ( 2/5 )*( defender.getDef() );
+      if( dmg < 1 )
+         {
+         dmg = 1;
+         } // end if
+      defender.setHP( defender.getHP() - dmg );
+      } // end method attack
+      
+   public static void magicAttack( int magAtt, Character defender )
+      {
+      int dmg = magAtt - ( 3/5 )*( defender.getMagicDef() );
+      if( dmg < 1 )
+         {
+         dmg = 1;
+         } // end if
+      defender.setHP( defender.getHP() - dmg );
+      } // end method magicAttack
+      
+   public static void attack( int att, int acc, Character defender )
+      {
+      int dodgeChance = (int) ( Math.random() * defender.getEvasion() );
+      if( acc < dodgeChance )
+         {
+         defender.dodge();
+         } // end if
+      else
+         {
+         int dmg = att - ( 2/5 )*( defender.getDef() );
+         if( dmg < 1 )
+            {
+            dmg = 1;
+            } // end if
+         defender.setHP( defender.getHP() - dmg );
+         } // end else
+      } // end method attack
+   
+   /** different dodge message for magic attack? */
+   public static void magicAttack( int magAtt, int acc, Character defender )
+      {
+      int dodgeChance = (int) ( Math.random() * defender.getEvasion() );
+      if( acc < dodgeChance )
+         {
+         defender.dodge();
+         } // end if
+      else
+         {
+         int dmg = magAtt - ( 3/5 )*( defender.getMagicDef() );
+         if( dmg < 1 )
+            {
+            dmg = 1;
+            } // end if
+         defender.setHP( defender.getHP() - dmg );
+         } // end else
+      } // end method magicAttack
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   } // end class Battle

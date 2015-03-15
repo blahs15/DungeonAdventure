@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=floorLvl\ h
+comment0.target=Equipment\ openChest(int,\ Hero)
+comment0.text=\n\ calls\ super.openChest\ with\ a\ floor\ level\ 3\ higher\ than\ current\ floorlvl\n\ makes\ sure\ the\ Equipment\ is\ usable\ by\ the\ Hero\n\ makes\ the\ Equipment\ "Shiny"\n
+comment1.params=
+comment1.target=java.lang.String\ getImage()
+numComments=2

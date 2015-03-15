@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=grid
+comment0.target=void\ printGrid(java.lang.String[][])
+comment0.text=\n\ Prints\ the\ dungeon\ grid\ in\ a\ text\ format\n\ Only\ used\ in\ original\ testing\ of\ program\ before\ animation\ was\ used\n\ @param\ 2D\ String\ array\ of\ the\ grid\n
+comment1.params=dungeon\ heroGrid\ f
+comment1.target=void\ printGrid(DungeonObject[][],\ Hero[][],\ int)
+comment1.text=\n\ Prints\ the\ dungeon\ grid\ in\ a\ text\ format\n\ Only\ used\ in\ original\ testing\ of\ program\ before\ animation\ was\ used\n\ @param\ dungeon\ 2D\ array\n\ @param\ 2D\ array\ with\ the\ Hero\n\ @param\ the\ current\ floor\ level\n
+numComments=2

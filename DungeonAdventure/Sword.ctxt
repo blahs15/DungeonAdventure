@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=floorLvl
+comment0.target=Sword(int)
+comment1.params=
+comment1.target=void\ setStats()
+comment2.params=
+comment2.target=void\ setName()
+numComments=3

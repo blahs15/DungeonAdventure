@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FireElemental()
+comment1.params=defender
+comment1.target=void\ attack(Character)
+comment2.params=defender
+comment2.target=void\ specAttack(Hero)
+comment3.params=defender
+comment3.target=void\ burn(Character)
+comment4.params=
+comment4.target=java.lang.String\ getImage()
+comment5.params=
+comment5.target=java.lang.String\ getBattleImage()
+numComments=6

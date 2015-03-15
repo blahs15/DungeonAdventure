@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=h\ m\ guii\ floorLvl
+comment0.target=void\ startBattle(Hero,\ Monster,\ GUI,\ int)
+comment1.params=h\ m\ heroWin
+comment1.target=void\ endBattle(Hero,\ Monster,\ boolean)
+comment2.params=h\ m
+comment2.target=boolean\ getFirstAttacker(Hero,\ Monster)
+comment2.text=compares\ speed\ of\ Hero\ and\ Monster\ to\ decide\ who\ goes\ first\n\ @param\ Hero\n\ @param\ Monster\ the\ Hero\ is\ battling\n\ @return\ true\ if\ the\ Hero\ goes\ first\n
+comment3.params=att\ defender\ attackName
+comment3.target=int\ attack(int,\ Character,\ java.lang.String)
+comment3.text=A\ basic\ attack\ that\ can't\ miss\n\ @param\ attack\ stat\n\ @param\ character\ being\ attacked\n\ @param\ name\ of\ the\ attack\n\ @return\ damage\ dealt\n
+comment4.params=magAtt\ defender\ attackName
+comment4.target=int\ magicAttack(int,\ Character,\ java.lang.String)
+comment4.text=A\ basic\ MAGIC\ attack\ that\ can't\ miss\n\ @param\ magic\ attack\ stat\n\ @param\ character\ being\ attacked\n\ @param\ name\ of\ the\ attack\n\ @return\ damage\ dealt\n
+comment5.params=att\ acc\ defender\ attackName
+comment5.target=int\ attack(int,\ int,\ Character,\ java.lang.String)
+comment5.text=A\ basic\ attack\ that\ has\ a\ chance\ of\ being\ dodged\n\ @param\ attack\ stat\n\ @param\ accuracy\ stat\n\ @param\ character\ being\ attacked\n\ @param\ name\ of\ the\ attack\n\ @return\ damage\ dealt\n
+comment6.params=magAtt\ acc\ defender\ attackName
+comment6.target=int\ magicAttack(int,\ int,\ Character,\ java.lang.String)
+comment6.text=A\ basic\ MAGIC\ attack\ that\ has\ a\ chance\ of\ being\ dodged\n\ @param\ magic\ attack\ stat\n\ @param\ accuracy\ stat\n\ @param\ character\ being\ attacked\n\ @param\ name\ of\ the\ attack\n\ @return\ damage\ dealt\n
+numComments=7

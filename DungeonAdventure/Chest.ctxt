@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Chest()
+comment1.params=floorLvl\ h
+comment1.target=Equipment\ openChest(int,\ Hero)
+comment1.text=\n\ creates\ a\ random\ Equipment\n\ @param\ floor\ level\n\ @param\ Hero\ opening\ the\ chest\n\ @return\ Equipment\ found\ in\ chest\n
+comment2.params=isOpen
+comment2.target=void\ setIsOpen(boolean)
+comment2.text=\n\ getter\ and\ setter\ for\ if\ the\ chest\ is\ open\ or\ not\n
+comment3.params=
+comment3.target=boolean\ getIsOpen()
+comment4.params=
+comment4.target=boolean\ getPathBlocked()
+comment5.params=
+comment5.target=java.lang.String\ getImage()
+numComments=6

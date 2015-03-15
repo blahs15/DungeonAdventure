@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ getPathBlocked()
+comment0.text=returns\ true\ if\ the\ object\ blocks\ the\ path\ of\ the\ Hero\n\ @return\ true\ if\ path\ is\ blocked\n
+comment1.params=
+comment1.target=java.lang.String\ getImage()
+comment1.text=\n\ @return\ the\ name\ of\ the\ image\ file\ for\ the\ Object\n
+numComments=2

@@ -1,0 +1,128 @@
+public abstract class Monster extends Character implements DungeonObject
+   {
+   private int exp;
+   private int specAttackCost;
+   private boolean magicUser;
+   
+   /** randomly chooses the 'attack' move for the Monster to use
+    * @param the Hero being attacked
+    */
+   public void chooseMove( Hero defender )
+      {
+      int rand = (int)( Math.random() * 100 );
+      // randomly chooses attack move
+      if( rand < 45 )
+         {
+         attack( defender );
+         } // end if
+      else if( rand < 60 )
+         {
+         guard();
+         } // end if
+      else if( rand < 90 )
+         {
+         if( getSP() >= specAttackCost )
+            {
+            specAttack( defender );
+            } // end if
+         else
+            {
+            chooseMove( defender );
+            } // end else
+         } // end if
+      else if( rand >= 90 )
+         {
+         if( getSP() >= specAttackCost )
+            {
+            specAttack( defender );
+            } // end if
+         else
+            {
+            rest();
+            } // end else
+         } // end if
+      } // end method chooseMove
+   
+   
+   public void dodge( String attackName )
+      {
+      System.out.println( "The " + getName() + " dodged your " + attackName );
+      // override method to print out dodge message
+      BattleScreen.dodgeM();
+      } // end method dodge()
+   
+   public void guard()
+      {
+      super.guard();
+      BattleScreen.flashOnSelfM( "GuardShield.png" );
+      } // end method guard
+   
+   public void rest()
+      {
+      System.out.println( "The " + getName() + " rested and gained " + 15 + " SP" );
+      setSP( getSP() + 15 );
+      super.rest();
+      BattleScreen.flashOnSelfM( "RestZs.png" );
+      } // end method Rest
+   
+   /**the basic attack move of Monsters
+    * calls a magic attack if the Monster is a magicUser
+    */
+   public void attack( Character defender )
+      {
+      if( magicUser == false )
+         {
+         Battle.attack( getAtt(), getAccuracy(), defender, "Attack" );
+         BattleScreen.moveMForward();
+         } // end if
+      else
+         {
+         Battle.magicAttack( getMagicAtt(), getAccuracy(), defender, "Magic Attack" );
+         BattleScreen.shootMToH( "MagicBoltFlip.png" );
+         } // end if
+      } // end method attack
+   
+   /**the special attack of a Monster
+    * specAttack() should be called to decrease the SP of the Monster
+    */
+   public abstract void specAttack( Hero defender );
+   public void specAttack()
+      {
+      // MUST be overridden to have attack, along with super() for SP cost
+      setSP( getSP() - getSpecAttackCost() );
+      } // end method specAttack
+   
+   /**getters and setters of instance variables
+    */
+   public void setSpecAttackCost( int SPCost )
+      {
+      specAttackCost = SPCost;
+      } // end method setSpecAttackCost
+   public int getSpecAttackCost()
+      {
+      return specAttackCost;
+      } // end method getSpecAttackCost
+   public void setMagicUser( boolean magic )
+      {
+      magicUser = magic;
+      } // end method setMagicUser
+   public boolean getMagicUser()
+      {
+      return magicUser;
+      } // end method getMagicUser
+   public void setExp( int exp )
+      {
+      this.exp = exp;
+      } // end method setExp
+   public int getExp()
+      {
+      return exp;
+      } // end method getExp()
+   
+   public boolean getPathBlocked()
+      {
+      return false;
+      } // end method blockPath
+   
+   public abstract String getBattleImage();
+   } // end class Monster

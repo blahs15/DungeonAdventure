@@ -1,0 +1,51 @@
+public class Vampire extends Monster
+   {
+   
+   public Vampire()
+      {
+      setName( "Vampire" );
+      setMagicUser( true );
+      setAtt( 0 );
+      setMagicAtt( 50 );
+      setDef( 65 );
+      setMagicDef( 65 );
+      setSpd( 50 );
+      setEvasion( 35 );
+      setAccuracy( 35 );
+      setMaxHP( 55 );
+      setMaxSP( 20 );
+      
+      setHP( getMaxHP() );
+      setSP( getMaxSP() );
+      
+      setSpecAttackCost( 10 );
+      setExp( 9 );
+      } // end constructor Vampire
+      
+   public void specAttack( Hero defender )
+      {
+      super.specAttack();
+      int dmg = Battle.magicAttack( getMagicAtt(), getAccuracy(), defender, "Life Drain" );
+      BattleScreen.flashImageOnH( "VampireSpec.png", "VampireSpec2.png" );
+      if( dmg > 0 )
+         {
+         setHP( getHP() + dmg * 2/3 );
+         System.out.println( "The Vampire stole " + (dmg*2/3) + " life" );
+         BattleScreen.flashOnSelfM( "VampireSpec2.png", "VampireSpec.png" );
+         } // end if
+      if( getHP() > getMaxHP() )
+         {
+         setHP( getMaxHP() );
+         } // end if
+      } // end method specAttack
+   
+   
+   public String getImage()
+      {
+      return "Vampire.png";
+      } // end method getImage
+   public String getBattleImage()
+      {
+      return "Vampire.png";
+      } // end method getImage
+   } // end class Vampire

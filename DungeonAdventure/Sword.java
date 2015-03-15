@@ -1,0 +1,106 @@
+public class Sword extends Equipment
+   {
+   
+   public Sword( int floorLvl )
+      {
+      super( floorLvl );
+      } // end constructor Sword
+   
+      
+   public void setStats()
+      {
+      setESlotNum( 0 );
+      int f = getFloorLvl();
+      setAtt( (int)( Math.random() * (2*f+2) ) + 2*f+2 );
+      setMagicAtt( 0 );
+      setDef( 0 );
+      setMagicDef( 0 );
+      setSpd( (int)( Math.random() * (f+3) ) );
+      setEvasion( (int)( Math.random() * f ) );
+      setAccuracy( (int)( Math.random() * 2*f ) + f );
+      setMaxHP( (int)( Math.random() * 3*f ) );
+      setMaxSP( (int)( Math.random() * f ) );
+      
+      setName();
+      } // end method setStats
+   
+   public void setName()
+      {
+      String name = new String();
+      int att = getAtt();
+      if( att < 10 )
+         {
+         name += "Wooden";
+         } // end if
+      else if( att < 16 )
+         {
+         name += "Copper";
+         } // end if
+      else if( att < 22 )
+         {
+         name += "Iron";
+         } // end if
+      else if( att < 28 )
+         {
+         name += "Bronze";
+         } // end if
+      else if( att < 34 )
+         {
+         name += "Steel";
+         } // end if
+      else if( att < 40 )
+         {
+         name += "Silver";
+         } // end if
+      else if( att < 46 )
+         {
+         name += "Gold";
+         } // end if
+      else if( att < 52 )
+         {
+         name += "Cobalt";
+         } // end if
+      else if( att < 58 )
+         {
+         name += "Mythril";
+         } // end if
+      else
+         {
+         name += "Adamantium";
+         } // end if
+      
+      name += " ";
+      int randomizer = (int) ( Math.random() * 7 );
+      if( randomizer == 0 )
+         {
+         name += "Sword";
+         } // end if
+      else if( randomizer == 1 )
+         {
+         name += "Broadsword";
+         } // end if
+      else if( randomizer == 2 )
+         {
+         name += "Katana";
+         } // end if
+      else if( randomizer == 3 )
+         {
+         name += "Scimitar";
+         } // end if
+      else if( randomizer == 4 )
+         {
+         name += "Rapier";
+         } // end if
+      else if( randomizer == 5 )
+         {
+         name += "Cutlass";
+         } // end if
+      else if( randomizer == 6 )
+         {
+         name += "Saber";
+         } // end if
+      
+      setName( name );
+      } // end method setName
+   
+   } // end class Sword
